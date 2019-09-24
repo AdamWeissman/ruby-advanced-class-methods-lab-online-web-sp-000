@@ -31,7 +31,7 @@ class Song
   end
   
   def self.find_by_name(a_string)
-    Song.all.match {|looking| looking.match == a_string}
+    Song.all.each {|looking| looking.match == a_string}
   end
  
 end
