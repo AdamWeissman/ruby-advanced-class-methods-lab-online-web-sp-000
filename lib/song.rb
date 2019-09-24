@@ -50,10 +50,10 @@ class Song
     artist = string_to_manipulate[0]
     song_name = string_to_manipulate[1].gsub(".mp3", "")
     
-    some_song = self.create
-    some_song.artist_name = artist
-    some_song.name = song_name
-    some_song.save
+    song = self.create
+    song.artist_name = artist
+    song.name = song_name
+    song.save
   end
 
 end
