@@ -60,7 +60,11 @@ class Song
     song = new_from_filename(string_to_manipulate)
     song.save
     song
-  end  
+  end
+  
+  def self.destroy_all
+    @@all = []
+  end
 
 end
   
