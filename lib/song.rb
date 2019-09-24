@@ -30,8 +30,8 @@ class Song
     song
   end
   
-  def self.find_by_name(a_string)
-    Song.all.include?(a_string)
+  def self.find_by_name(this_name)
+    Song.all.include?(this_name)
   end
  
 end
