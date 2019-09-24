@@ -11,13 +11,9 @@ class Song
     self.class.all << self
   end
   
-  def initialize
-    @name = name
-    @artist_name = artist_name
-  end
-  
   def self.create(name, artist_name)
-    Song.new.save
+    song = Song.new
+    song.save
   end
   
  
