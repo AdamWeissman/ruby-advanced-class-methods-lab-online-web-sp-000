@@ -38,6 +38,11 @@ class Song
     find_by_name(this_name) || create_by_name(this_name)
   end
 
+#the above code -- very interesting... something to remember:
+#if create_by_name is the first part of the || statement then the test will fail
+
+  def self.alphabetical
+    Song.all.sort_by(name)
 
 end
   
