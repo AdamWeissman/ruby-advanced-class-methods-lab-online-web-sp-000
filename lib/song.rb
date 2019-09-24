@@ -48,7 +48,7 @@ class Song
   def self.new_from_filename(string_to_manipulate)
     parts = string_to_manipulate.split(" - ")
     artist_name = string_to_manipulate[0]
-    song_name = string_to_manipulate[1].gsub!(".mp3", "")
+    song_name = string_to_manipulate[1].gsub(".mp3", "")
     
     some_song = self.create
     some_song.name = song_name
