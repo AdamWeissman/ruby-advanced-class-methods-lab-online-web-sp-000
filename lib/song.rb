@@ -50,6 +50,8 @@ class Song
     artist_name = string_to_manipulate[0]
     song_name = string_to_manipulate[1].gsub!(".mp3", "")
     
+    song.self
+    
   end
 
 end
