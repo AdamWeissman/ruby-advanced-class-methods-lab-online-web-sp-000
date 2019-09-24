@@ -31,7 +31,7 @@ class Song
   end
   
   def self.find_by_name(this_name)
-    Song.all.each {|this| this.include?(this_name)}
+    Song.all.find {|a_song| a_song.name == this_name}
   end
  
 end
