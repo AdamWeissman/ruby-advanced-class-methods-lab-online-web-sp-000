@@ -52,7 +52,7 @@ class Song
     
     some_song = self.create
     some_song.name = song_name
-    some_song.artist = artist_name
+    some_song.artist_name = artist_name
     some_song.save
   end
 
