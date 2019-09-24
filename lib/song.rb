@@ -44,6 +44,11 @@ class Song
   def self.alphabetical
     Song.all.sort_by {|i| i.name}
   end
+  
+  def self.new_from_filename(string_to_manipulate)
+    string_to_manipulate.strip
+    
+  end
 
 end
   
