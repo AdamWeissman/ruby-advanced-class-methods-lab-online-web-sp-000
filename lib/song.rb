@@ -46,7 +46,7 @@ class Song
   end
   
   def self.new_from_filename(string_to_manipulate)
-    string_to_manipulate.strip
+    string_to_manipulate.split("-")
     
   end
 
