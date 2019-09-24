@@ -55,6 +55,12 @@ class Song
     song.name = song_name
     song
   end
+  
+  def self.create_from_filename(string_to_manipulate)
+    song = new_from_filename(string_to_manipulate)
+    song.save
+    song
+  end  
 
 end
   
