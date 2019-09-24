@@ -11,8 +11,12 @@ class Song
     self.class.all << self
   end
   
+  def initialize(a_song)
+    @song = a_song
+  end
+  
   def self.create(a_song)
-    @@all << a_song
+    Song.new
   end
   
  
