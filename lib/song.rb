@@ -14,6 +14,7 @@ class Song
   def self.create(name, artist_name)
     song = Song.new
     song.save
+    song
   end
   
  
