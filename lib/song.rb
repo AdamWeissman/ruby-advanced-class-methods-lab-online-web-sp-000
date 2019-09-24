@@ -29,6 +29,11 @@ class Song
     song.save
     song
   end
+  
+  def self.find_by_name(a_string)
+    found = all.find {|looking| looking == a_string}
+    return found
+  end
  
 end
   
