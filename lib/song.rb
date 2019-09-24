@@ -42,7 +42,8 @@ class Song
 #if create_by_name is the first part of the || statement then the test will fail
 
   def self.alphabetical
-    Song.all.sort_by(name)
+    Song.all.sort_by(name, a-z)
+  end
 
 end
   
